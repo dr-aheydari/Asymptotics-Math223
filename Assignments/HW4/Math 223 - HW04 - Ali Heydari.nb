@@ -1,0 +1,261 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8815,        253]
+NotebookOptionsPosition[      7357,        220]
+NotebookOutlinePosition[      7958,        242]
+CellTagsIndexPosition[      7915,        239]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Math 223: Homework 4", "Title",
+ CellChangeTimes->{{3.819477029542458*^9, 3.8194770325147047`*^9}, {
+   3.821234360928924*^9, 3.82123436135856*^9}, 3.821673592179646*^9, 
+   3.8223274687530727`*^9},ExpressionUUID->"197654a4-4d8f-4ad2-acd2-\
+0426bba106a8"],
+
+Cell["Ali Heydari", "Author",
+ CellChangeTimes->{{3.819477041266364*^9, 3.81947704456911*^9}, {
+  3.821234363790626*^9, 
+  3.821234365260395*^9}},ExpressionUUID->"47fdc244-5ee2-4b42-93c3-\
+40f677fdf9ef"],
+
+Cell["Feb. 18th, 2021", "Affiliation",
+ CellChangeTimes->{{3.8194774638175488`*^9, 3.819477466618027*^9}, {
+  3.821234367895542*^9, 3.821234386336918*^9}, {3.821673656906838*^9, 
+  3.821673657302966*^9}, {3.822329764875699*^9, 
+  3.822329765200156*^9}},ExpressionUUID->"581392a7-3011-4211-898e-\
+5aefcdf8effb"],
+
+Cell[CellGroupData[{
+
+Cell["Problem 1", "Section",
+ CellChangeTimes->{{3.8194770755713477`*^9, 
+  3.8194770765366144`*^9}},ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-\
+4b7c9c73d5a2"],
+
+Cell[TextData[{
+ "Find the behavior as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", " ", "\[Rule]", " ", 
+    RowBox[{"+", "\[Infinity]"}]}], TraditionalForm]],ExpressionUUID->
+  "62f9c793-a655-4140-9127-f844e3b88f55"],
+ " for the following equations:"
+}], "Text",
+ CellChangeTimes->{{3.819477124705309*^9, 3.8194771397099257`*^9}, {
+  3.8212344864356613`*^9, 3.821234537334075*^9}, {3.821234683954668*^9, 
+  3.8212349376689463`*^9}, {3.821673685871891*^9, 3.821673734921731*^9}, {
+  3.821674207257946*^9, 3.8216742081665773`*^9}, {3.8223274747361193`*^9, 
+  3.8223274955403643`*^9}},ExpressionUUID->"d8fb54c8-1da0-4208-b74e-\
+3f8dbdd27abd"],
+
+Cell[TextData[{
+ StyleBox["(a) ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"x", " ", 
+     SuperscriptBox["y", 
+      RowBox[{"(", "3", ")"}]]}], " ", "=", " ", 
+    RowBox[{"y", "'"}]}], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"dc258591-f2c0-473d-aa7b-0c76fe6f05cc"]
+}], "Text",
+ CellFrame->{{0, 0}, {0, 3}},
+ CellChangeTimes->{{3.821674249695997*^9, 3.8216742526656857`*^9}, {
+  3.8216744102705507`*^9, 3.8216744129647827`*^9}, {3.822327503219891*^9, 
+  3.822327529616927*^9}},ExpressionUUID->"b30c9176-6729-4884-860b-\
+1f9c1c80f9c4"],
+
+Cell[TextData[{
+ "We let the ansatz to be y(t) = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["\[ExponentialE]", 
+    RowBox[{"S", "(", "t", ")"}]], TraditionalForm]],ExpressionUUID->
+  "ebd7f63e-7f05-406c-9a8e-c6ae2e8b30e0"],
+ ", which means that \n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"y", "'"}], 
+     RowBox[{"(", "t", ")"}]}], " ", "=", 
+    RowBox[{
+     RowBox[{"S", "'"}], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"S", "(", "t", ")"}]]}]}], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"f8a95bde-8d89-4d00-8e27-b154499c0106"],
+ StyleBox["\ny\[CloseCurlyQuote]\[CloseCurlyQuote](t)= ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"S", "''"}], 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"S", "(", "t", ")"}]]}], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"30b4d58c-a5ea-4192-a888-e85524d83f98"],
+ " + ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"S", "'"}], ")"}], "2"], 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"S", "(", "t", ")"}]]}], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"c88d97cc-7891-454f-adba-6507e8c4cd08"],
+ "\n",
+ StyleBox["y\[CloseCurlyQuote]\[CloseCurlyQuote]\[CloseCurlyQuote](t)= ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"S", "'''"}], 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"S", "(", "t", ")"}]]}], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"441ebbcf-2eec-46e1-9e04-acb98cf567e9"],
+ StyleBox[" + ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"3", 
+     RowBox[{"S", "''"}], 
+     RowBox[{"S", "'"}], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"S", "(", "t", ")"}]]}], " ", 
+    StyleBox["+",
+     FontSize->18], 
+    StyleBox[" ",
+     FontSize->18], 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"S", "'"}], ")"}], "3"], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"S", "(", "t", ")"}]]}]}], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"cfc17eb4-122e-4a01-8e87-5e270158f767"],
+ "\n\nTo verify the derivatives we found by hand:"
+}], "Text",
+ CellChangeTimes->{{3.821674417055039*^9, 3.821674464052039*^9}, {
+  3.821674511939803*^9, 3.821674645044827*^9}, {3.821674752347728*^9, 
+  3.821674759491136*^9}, {3.821674856322599*^9, 3.8216749362064133`*^9}, {
+  3.821674989173456*^9, 
+  3.821674992322609*^9}},ExpressionUUID->"fca57afe-973b-43cf-b84d-\
+ccfed51e718f"],
+
+Cell[TextData[{
+ StyleBox["(b) ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"y", "''"}], " ", "=", " ", 
+    RowBox[{
+     SqrtBox["x"], "y"}]}], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"aaa17d94-a6e6-42ed-bb17-31e2d8f36aab"]
+}], "Text",
+ CellFrame->{{0, 0}, {0, 3}},
+ CellChangeTimes->{{3.82123494738113*^9, 3.821234950390037*^9}, 
+   3.821234993351469*^9, 3.821235076083819*^9, {3.8216737463638678`*^9, 
+   3.821673760830474*^9}, {3.822327569135592*^9, 3.822327574789425*^9}, {
+   3.822327675882756*^9, 3.822327679542943*^9}, {3.822327758482139*^9, 
+   3.822327771542444*^9}},ExpressionUUID->"9c69f502-2168-4f83-955f-\
+791e7d8c0a16"],
+
+Cell[TextData[{
+ "As before, we set the ansatz to be y(t) = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["\[ExponentialE]", 
+    RowBox[{"S", "(", "t", ")"}]], TraditionalForm]],ExpressionUUID->
+  "6c7c782e-6321-463a-8b25-6454930f1d9d"],
+ " and using the derivatives found above, we have: "
+}], "Text",
+ CellChangeTimes->{{3.821931474760838*^9, 3.821931486284273*^9}, {
+  3.8223297329205027`*^9, 
+  3.822329736300632*^9}},ExpressionUUID->"3a89a20f-5fe9-4f12-8880-\
+3741094da763"],
+
+Cell[TextData[{
+ StyleBox["(c) ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"y", "''"}], "=", 
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      FractionBox[
+       RowBox[{"-", "3"}], "x"]], "y"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,
+  FontSize->24,ExpressionUUID->"71b8ccee-05b5-451a-918d-7795a6d91f2c"],
+ "\nFollowing the same procedure as before, we can obtain:"
+}], "Text",
+ CellFrame->{{0, 0}, {0, 3}},
+ CellChangeTimes->{{3.821234962680475*^9, 3.821235014208829*^9}, {
+  3.821673766079514*^9, 3.8216738694714127`*^9}, {3.821674123102735*^9, 
+  3.821674165503895*^9}, {3.8216742963177834`*^9, 3.821674401335047*^9}, {
+  3.822327814044981*^9, 3.8223278289382887`*^9}, {3.822327858948566*^9, 
+  3.822327865183654*^9}, {3.822327967179668*^9, 3.822327989655697*^9}, {
+  3.8223297312301903`*^9, 
+  3.8223297372649803`*^9}},ExpressionUUID->"cb9ef0a7-c85e-4619-a046-\
+db795cfb2d6f"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{277, Automatic}, {Automatic, 55}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+PrintingOptions->{"PrintCellBrackets"->False,
+"PrintMultipleHorizontalPages"->False,
+"PrintRegistrationMarks"->False,
+"PrintingMargins"->36},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"ReverseColor.nb",
+ExpressionUUID->"e2721b4e-b5ce-4168-a6d8-fca37973b592"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 261, 4, 98, "Title",ExpressionUUID->"197654a4-4d8f-4ad2-acd2-0426bba106a8"],
+Cell[844, 28, 203, 4, 31, "Author",ExpressionUUID->"47fdc244-5ee2-4b42-93c3-40f677fdf9ef"],
+Cell[1050, 34, 310, 5, 31, "Affiliation",ExpressionUUID->"581392a7-3011-4211-898e-5aefcdf8effb"],
+Cell[CellGroupData[{
+Cell[1385, 43, 158, 3, 67, "Section",ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-4b7c9c73d5a2"],
+Cell[1546, 48, 641, 14, 33, "Text",ExpressionUUID->"d8fb54c8-1da0-4208-b74e-3f8dbdd27abd"],
+Cell[2190, 64, 572, 16, 50, "Text",ExpressionUUID->"b30c9176-6729-4884-860b-1f9c1c80f9c4"],
+Cell[2765, 82, 2473, 76, 151, "Text",ExpressionUUID->"fca57afe-973b-43cf-b84d-ccfed51e718f"],
+Cell[5241, 160, 670, 17, 53, "Text",ExpressionUUID->"9c69f502-2168-4f83-955f-791e7d8c0a16"],
+Cell[5914, 179, 481, 12, 33, "Text",ExpressionUUID->"3a89a20f-5fe9-4f12-8880-3741094da763"],
+Cell[6398, 193, 931, 23, 80, "Text",ExpressionUUID->"cb9ef0a7-c85e-4619-a046-db795cfb2d6f"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
