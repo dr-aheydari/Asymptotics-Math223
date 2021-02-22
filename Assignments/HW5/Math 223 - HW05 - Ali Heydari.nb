@@ -1,0 +1,205 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6989,        197]
+NotebookOptionsPosition[      5628,        165]
+NotebookOutlinePosition[      6226,        187]
+CellTagsIndexPosition[      6183,        184]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"et", " "}]], "Input",
+ CellChangeTimes->{{3.822697323058*^9, 
+  3.8226973232093163`*^9}},ExpressionUUID->"e71aabd7-ea26-4322-afcd-\
+78ef3d19348f"],
+
+Cell[CellGroupData[{
+
+Cell["Math 223: Homework 5", "Title",
+ CellChangeTimes->{{3.819477029542458*^9, 3.8194770325147047`*^9}, {
+   3.821234360928924*^9, 3.82123436135856*^9}, 3.821673592179646*^9, 
+   3.8223274687530727`*^9, 
+   3.8229506996826143`*^9},ExpressionUUID->"197654a4-4d8f-4ad2-acd2-\
+0426bba106a8"],
+
+Cell["Ali Heydari", "Author",
+ CellChangeTimes->{{3.819477041266364*^9, 3.81947704456911*^9}, {
+  3.821234363790626*^9, 
+  3.821234365260395*^9}},ExpressionUUID->"47fdc244-5ee2-4b42-93c3-\
+40f677fdf9ef"],
+
+Cell["Feb. 25th, 2021", "Affiliation",
+ CellChangeTimes->{{3.8194774638175488`*^9, 3.819477466618027*^9}, {
+  3.821234367895542*^9, 3.821234386336918*^9}, {3.821673656906838*^9, 
+  3.821673657302966*^9}, {3.822329764875699*^9, 3.822329765200156*^9}, {
+  3.8229507025853243`*^9, 
+  3.822950702887766*^9}},ExpressionUUID->"581392a7-3011-4211-898e-\
+5aefcdf8effb"],
+
+Cell[CellGroupData[{
+
+Cell["Problem 1", "Section",
+ CellChangeTimes->{{3.8194770755713477`*^9, 
+  3.8194770765366144`*^9}},ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-\
+4b7c9c73d5a2"],
+
+Cell[TextData[{
+ "(a) Find the first three terms in the local behavior as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "\[Rule]", " ", 
+    SuperscriptBox["0", "+"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9d0a0ac0-3fb1-47d9-9fc7-663aadd0aca8"],
+ "of a particular solution y(x) to \n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"y", "'"}], TraditionalForm]],
+  FormatType->TraditionalForm,
+  FontSize->16,ExpressionUUID->"1723a430-1dfa-477a-b36c-3a8ee8fd38c3"],
+ StyleBox["+xy = ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", 
+    RowBox[{"-", "3"}]], TraditionalForm]],
+  FormatType->TraditionalForm,
+  FontSize->16,ExpressionUUID->"e2f6dfdc-da86-48c3-9834-0ac45e68fe60"]
+}], "Text",
+ CellChangeTimes->{{3.819477124705309*^9, 3.8194771397099257`*^9}, {
+  3.8212344864356613`*^9, 3.821234537334075*^9}, {3.821234683954668*^9, 
+  3.8212349376689463`*^9}, {3.821673685871891*^9, 3.821673734921731*^9}, {
+  3.821674207257946*^9, 3.8216742081665773`*^9}, {3.8223274747361193`*^9, 
+  3.8223274955403643`*^9}, {3.822950709346381*^9, 3.822950761245832*^9}, {
+  3.822950812186616*^9, 
+  3.822950812675643*^9}},ExpressionUUID->"d8fb54c8-1da0-4208-b74e-\
+3f8dbdd27abd"],
+
+Cell["\<\
+First, we want to find the asymptotic series about the 
+\
+\>", "Text",
+ CellChangeTimes->{
+  3.822951476677903*^9, {3.822951714837309*^9, 
+   3.822951732055625*^9}},ExpressionUUID->"e4b0de8c-9dea-4f9e-8a24-\
+012af76f62ef"],
+
+Cell[TextData[{
+ "(b) ",
+ "Find the leading behavior of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     StyleBox[
+      SuperscriptBox[
+       SubscriptBox["\[Integral]", "0"], "1"],
+      FontSize->16], 
+     RowBox[{
+      StyleBox[
+       FractionBox[
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"-", "xt"}]], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "+", "t"}], ")"}], "2"]],
+       FontSize->16], "dt", " ", "as", " ", "x"}]}], " ", "\[Rule]", " ", 
+    SuperscriptBox["0", "+"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "82246fb7-30be-440c-bcb9-c6585103d018"],
+ "\n"
+}], "Text",
+ CellFrame->{{0, 0}, {0, 3}},
+ CellChangeTimes->{{3.82123494738113*^9, 3.821234950390037*^9}, 
+   3.821234993351469*^9, 3.821235076083819*^9, {3.8216737463638678`*^9, 
+   3.821673760830474*^9}, {3.822327569135592*^9, 3.822327574789425*^9}, {
+   3.822327675882756*^9, 3.822327679542943*^9}, {3.822327758482139*^9, 
+   3.822327771542444*^9}, {3.822950820810108*^9, 3.8229508735933027`*^9}, 
+   3.8229510629831*^9},ExpressionUUID->"9c69f502-2168-4f83-955f-791e7d8c0a16"],
+
+Cell[TextData[{
+ "(c) Find the asymptotic series series for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     SubscriptBox["\[Integral]", "0"], "x"], 
+    RowBox[{
+     SuperscriptBox["t", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", "4"}]], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", "t"}]], "dt"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "dcd4ddce-e22a-4026-80a6-87ab3225a2f7"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "\[Rule]", " ", 
+    SuperscriptBox["0", "+"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "21917372-3fc3-48f9-85c3-3ecbc756717d"]
+}], "Text",
+ CellFrame->{{0, 0}, {0, 3}},
+ CellChangeTimes->{{3.821234962680475*^9, 3.821235014208829*^9}, {
+  3.821673766079514*^9, 3.8216738694714127`*^9}, {3.821674123102735*^9, 
+  3.821674165503895*^9}, {3.8216742963177834`*^9, 3.821674401335047*^9}, {
+  3.822327814044981*^9, 3.8223278289382887`*^9}, {3.822327858948566*^9, 
+  3.822327865183654*^9}, {3.822327967179668*^9, 3.822327989655697*^9}, {
+  3.8223297312301903`*^9, 3.8223297372649803`*^9}, {3.822950903238524*^9, 
+  3.8229510609890547`*^9}},ExpressionUUID->"cb9ef0a7-c85e-4619-a046-\
+db795cfb2d6f"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{2, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+PrintingOptions->{"PrintCellBrackets"->False,
+"PrintMultipleHorizontalPages"->False,
+"PrintRegistrationMarks"->False,
+"PrintingMargins"->36},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"ReverseColor.nb",
+ExpressionUUID->"e2721b4e-b5ce-4168-a6d8-fca37973b592"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 170, 4, 30, "Input",ExpressionUUID->"e71aabd7-ea26-4322-afcd-78ef3d19348f"],
+Cell[CellGroupData[{
+Cell[753, 28, 289, 5, 98, "Title",ExpressionUUID->"197654a4-4d8f-4ad2-acd2-0426bba106a8"],
+Cell[1045, 35, 203, 4, 31, "Author",ExpressionUUID->"47fdc244-5ee2-4b42-93c3-40f677fdf9ef"],
+Cell[1251, 41, 361, 6, 31, "Affiliation",ExpressionUUID->"581392a7-3011-4211-898e-5aefcdf8effb"],
+Cell[CellGroupData[{
+Cell[1637, 51, 158, 3, 67, "Section",ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-4b7c9c73d5a2"],
+Cell[1798, 56, 1207, 30, 57, "Text",ExpressionUUID->"d8fb54c8-1da0-4208-b74e-3f8dbdd27abd"],
+Cell[3008, 88, 232, 7, 52, "Text",ExpressionUUID->"e4b0de8c-9dea-4f9e-8a24-012af76f62ef"],
+Cell[3243, 97, 1138, 31, 81, "Text",ExpressionUUID->"9c69f502-2168-4f83-955f-791e7d8c0a16"],
+Cell[4384, 130, 1216, 31, 50, "Text",ExpressionUUID->"cb9ef0a7-c85e-4619-a046-db795cfb2d6f"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
