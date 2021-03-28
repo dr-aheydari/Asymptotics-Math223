@@ -1,0 +1,234 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7939,        226]
+NotebookOptionsPosition[      6554,        196]
+NotebookOutlinePosition[      6955,        212]
+CellTagsIndexPosition[      6912,        209]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Math 223: Homework 8", "Title",
+ CellChangeTimes->{{3.819477029542458*^9, 3.8194770325147047`*^9}, {
+   3.821234360928924*^9, 3.82123436135856*^9}, 3.823272087447147*^9, 
+   3.8232721328114*^9, 
+   3.8259595846014433`*^9},ExpressionUUID->"197654a4-4d8f-4ad2-acd2-\
+0426bba106a8"],
+
+Cell["Ali Heydari", "Author",
+ CellChangeTimes->{{3.819477041266364*^9, 3.81947704456911*^9}, {
+  3.821234363790626*^9, 
+  3.821234365260395*^9}},ExpressionUUID->"47fdc244-5ee2-4b42-93c3-\
+40f677fdf9ef"],
+
+Cell["April 8th, 2021", "Affiliation",
+ CellChangeTimes->{{3.8194774638175488`*^9, 3.819477466618027*^9}, {
+  3.821234367895542*^9, 3.821234386336918*^9}, {3.823272100909387*^9, 
+  3.823272102377499*^9}, {3.8259597254500027`*^9, 
+  3.8259597302822247`*^9}},ExpressionUUID->"581392a7-3011-4211-898e-\
+5aefcdf8effb"],
+
+Cell[CellGroupData[{
+
+Cell["Problem 1", "Section",
+ CellChangeTimes->{{3.8194770755713477`*^9, 
+  3.8194770765366144`*^9}},ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-\
+4b7c9c73d5a2"],
+
+Cell[TextData[{
+ StyleBox["Find the asymptotic behavior of ",
+  FontSize->16],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         StyleBox["S", "TI"], 
+         RowBox[{"(", 
+           StyleBox["x", "TI"], ")"}], "\[LongEqual]", 
+         SubsuperscriptBox["\[Integral]", "0", "2"], 
+         RowBox[{"(", 
+           RowBox[{"sin", 
+             StyleBox["t", "TI"], "+", 
+             StyleBox["t", "TI"]}], ")"}], 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          RowBox[{
+            StyleBox["i", "TI"], 
+            StyleBox["x", "TI"], 
+            StyleBox["t", "TI"]}]], 
+         StyleBox["d", "TI"], 
+         StyleBox["t", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "S(x) = \\int_0^2 (\\sin t + t)e^{ixt} dt", "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"d8ed7eb8-9db7-4677-93e0-09bc0dee06c4"],
+ "\n\n",
+ StyleBox["as ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "\[Rule]", " ", "\[Infinity]"}], TraditionalForm]],
+  FormatType->TraditionalForm,
+  FontSize->16,ExpressionUUID->"14730167-d6f5-45ef-b9ad-1d57c3acb561"],
+ StyleBox[" up to terms involving ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", 
+    SuperscriptBox["x", "2"]], TraditionalForm]],
+  FormatType->TraditionalForm,
+  FontSize->16,ExpressionUUID->"40dd7668-ae44-44e0-887a-6f7ffd891166"],
+ StyleBox[".",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->{{3.823272161170442*^9, 3.8232721651934137`*^9}, {
+  3.823272397584096*^9, 3.823272557020988*^9}, {3.823272644521634*^9, 
+  3.8232726452007303`*^9}, {3.825959742695582*^9, 3.825959766477799*^9}, {
+  3.8259598405590067`*^9, 
+  3.825959891457879*^9}},ExpressionUUID->"d9d81440-dd2a-4915-ae1b-\
+9469cd2d3476"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 2", "Section",
+ CellChangeTimes->{{3.819477185401244*^9, 
+  3.8194771863519216`*^9}},ExpressionUUID->"3f070b75-5760-46e2-8dfd-\
+1b5d3e237d45"],
+
+Cell[TextData[{
+ "Use the method of stationary phase to find the leading behaviors of the \
+following integrals as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "\[Rule]", " ", "\[Infinity]"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "68368d19-a9c2-4d44-aee0-c2b7f1523f86"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.8194771895995965`*^9, 3.8194771998661075`*^9}, {
+  3.821235115460826*^9, 3.821235161814089*^9}, {3.821235212212501*^9, 
+  3.8212352653571863`*^9}, {3.8212353035743437`*^9, 3.821235416260076*^9}, {
+  3.82327215719536*^9, 3.823272167210637*^9}, {3.825959905907143*^9, 
+  3.825959949714778*^9}},ExpressionUUID->"ac4970ba-4670-4dab-9885-\
+453ea799808e"],
+
+Cell[TextData[{
+ "(",
+ StyleBox["a) ",
+  FontSize->24],
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         SubsuperscriptBox["\[Integral]", "0", "1"], "tan", 
+         RowBox[{"(", 
+           StyleBox["t", "TI"], ")"}], 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          RowBox[{
+            StyleBox["i", "TI"], 
+            StyleBox["x", "TI"], 
+            SuperscriptBox[
+             StyleBox["t", "TI"], "4"]}]], 
+         StyleBox["d", "TI"], 
+         StyleBox["t", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\int_0^1 \\tan(t) e^{ixt^4} dt", "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"35174234-1c60-4550-b333-f98dd96d4bb3"]
+}], "Text",
+ CellChangeTimes->{{3.8259599524251833`*^9, 3.825959958755398*^9}, {
+  3.825960132349842*^9, 
+  3.825960135911168*^9}},ExpressionUUID->"2138f53d-2a4e-4903-97d4-\
+0f7c2ee95c22"],
+
+Cell["", "Text",ExpressionUUID->"f33ef689-6137-4598-997d-a591058c1d3e"],
+
+Cell[TextData[{
+ StyleBox["(b) ",
+  FontSize->24],
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         SubsuperscriptBox["\[Integral]", 
+          FractionBox["1", "2"], "2"], 
+         RowBox[{"(", 
+           RowBox[{"1", "+", 
+             StyleBox["t", "TI"]}], ")"}], 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          RowBox[{
+            StyleBox["i", "TI"], 
+            StyleBox["x", "TI"], 
+            RowBox[{"(", 
+              FractionBox[
+               SuperscriptBox[
+                StyleBox["t", "TI"], "3"], 
+               RowBox[{"3", "-", 
+                 StyleBox["t", "TI"]}]], ")"}]}]], 
+         StyleBox["d", "TI"], 
+         StyleBox["t", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\int_{\\frac{1}{2}}^2 (1+t)e^{ix(\\frac{t^3}{3-t})} dt", "state" -> 
+     "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"be463bab-726c-4513-a5b9-31a3687a85dc"]
+}], "Text",
+ CellChangeTimes->{{3.825960003081369*^9, 
+  3.825960009076634*^9}},ExpressionUUID->"4d39681f-6bc0-4ea5-9104-\
+1e021d73aa86"],
+
+Cell["", "Text",ExpressionUUID->"1ac48bfa-8b12-4ba0-bca0-2d8ea93dd08c"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1440, 786},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"ReverseColor.nb",
+ExpressionUUID->"f74e56a5-38ed-4850-a04c-7e68100a3bda"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 285, 5, 98, "Title",ExpressionUUID->"197654a4-4d8f-4ad2-acd2-0426bba106a8"],
+Cell[868, 29, 203, 4, 31, "Author",ExpressionUUID->"47fdc244-5ee2-4b42-93c3-40f677fdf9ef"],
+Cell[1074, 35, 314, 5, 31, "Affiliation",ExpressionUUID->"581392a7-3011-4211-898e-5aefcdf8effb"],
+Cell[CellGroupData[{
+Cell[1413, 44, 158, 3, 67, "Section",ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-4b7c9c73d5a2"],
+Cell[1574, 49, 1816, 51, 159, "Text",ExpressionUUID->"d9d81440-dd2a-4915-ae1b-9469cd2d3476"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3427, 105, 156, 3, 67, "Section",ExpressionUUID->"3f070b75-5760-46e2-8dfd-1b5d3e237d45"],
+Cell[3586, 110, 690, 15, 33, "Text",ExpressionUUID->"ac4970ba-4670-4dab-9885-453ea799808e"],
+Cell[4279, 127, 962, 27, 80, "Text",ExpressionUUID->"2138f53d-2a4e-4903-97d4-0f7c2ee95c22"],
+Cell[5244, 156, 71, 0, 32, "Text",ExpressionUUID->"f33ef689-6137-4598-997d-a591058c1d3e"],
+Cell[5318, 158, 1134, 32, 86, "Text",ExpressionUUID->"4d39681f-6bc0-4ea5-9104-1e021d73aa86"],
+Cell[6455, 192, 71, 0, 32, "Text",ExpressionUUID->"1ac48bfa-8b12-4ba0-bca0-2d8ea93dd08c"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
