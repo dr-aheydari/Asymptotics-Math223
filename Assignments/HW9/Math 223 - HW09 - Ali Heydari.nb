@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    101721,       2454]
-NotebookOptionsPosition[     95344,       2342]
-NotebookOutlinePosition[     95746,       2358]
-CellTagsIndexPosition[     95703,       2355]
+NotebookDataLength[    108975,       2649]
+NotebookOptionsPosition[    101954,       2527]
+NotebookOutlinePosition[    102356,       2543]
+CellTagsIndexPosition[    102313,       2540]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2233,17 +2233,202 @@ Cell[TextData[{
 the approximation up to first order! As shown above, as \[Epsilon] ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"\[Rule]", " ", "0"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"\[Rule]", " ", "0"}], TraditionalForm]],ExpressionUUID->
   "e6ab3670-fde8-4f2d-9f57-e6303be3e41e"],
  ", we can see that our approximation and the exact solution match extremely \
 well! So this concludes finding the solution in perturbed powers of \
-\[Epsilon]."
+\[Epsilon].\n\nThe series that we computed clearly converges for all values \
+of \[Epsilon], since our series will have the form:\n\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         StyleBox["y", "TI"], "\[LongEqual]", 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          StyleBox["x", "TI"]], "+", 
+         UnderoverscriptBox["\[Sum]", 
+          RowBox[{
+            StyleBox["n", "TI"], "\[LongEqual]", "1"}], "\[Infinity]", 
+          LimitsPositioning -> True], 
+         SubscriptBox[
+          StyleBox["a", "TI"], 
+          StyleBox["n", "TI"]], 
+         RowBox[{"(", 
+           RowBox[{
+             SuperscriptBox["\[Epsilon]", 
+              StyleBox["n", "TI"]], 
+             SuperscriptBox[
+              StyleBox["e", "TI"], 
+              StyleBox["x", "TI"]], 
+             SuperscriptBox[
+              StyleBox["x", "TI"], 
+              RowBox[{"2", 
+                StyleBox["n", "TI"]}]]}], ")"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "y = e^x + \\sum_{n=1}^\\infty a_n (\\epsilon^n e^x x^{2n})", "state" -> 
+     "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "cb0b0171-09af-4a7c-99ba-863583da7119"],
+ "\n\nwhere ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         SubscriptBox[
+          StyleBox["a", "TI"], 
+          StyleBox["n", "TI"]], "\[LongEqual]", 
+         SubscriptBox[
+          StyleBox["a", "TI"], 
+          RowBox[{
+            StyleBox["n", "TI"], "-", "1"}]], "*2", 
+         StyleBox["n", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "a_n = a_{n-1}*2n", "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "ca6af337-5f1c-4597-8a03-b740b4f7615b"],
+ " with ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         SubscriptBox[
+          StyleBox["a", "TI"], "0"], "\[LongEqual]", "1"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "a_0 = 1", "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "4c8c030e-be99-4617-91a3-07732e1bb1b6"],
+ ". "
 }], "Text",
  CellChangeTimes->{{3.826851608348781*^9, 3.826851704139797*^9}, {
-  3.826897389075747*^9, 
-  3.826897447256856*^9}},ExpressionUUID->"be8cce3a-09de-4f39-a3c0-\
-90571fbaa201"]
+  3.826897389075747*^9, 3.826897447256856*^9}, {3.826898719121052*^9, 
+  3.826898777831003*^9}, {3.8268994494423323`*^9, 3.826899490968376*^9}, {
+  3.82689954606252*^9, 
+  3.826899547532919*^9}},ExpressionUUID->"be8cce3a-09de-4f39-a3c0-\
+90571fbaa201"],
+
+Cell["\<\
+Now for the second part of the problem, to expand the exact solution in \
+\[Epsilon], we have:\
+\>", "Text",
+ CellChangeTimes->{{3.826898861053042*^9, 
+  3.826898891400363*^9}},ExpressionUUID->"3bb61e4b-9e23-40e4-ba51-\
+68750628ade4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   SuperscriptBox["\[ExponentialE]", 
+    RowBox[{"x", "+", 
+     FractionBox[
+      RowBox[{
+       SuperscriptBox["x", "2"], " ", "\[Epsilon]"}], "2"]}]], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Epsilon]", ",", "0", ",", "5"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8268989005625057`*^9, 3.826898913022498*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"ffb264fb-d231-493d-8114-88c93f6045ee"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[ExponentialE]", "x"], "+", 
+   RowBox[{
+    FractionBox["1", "2"], " ", 
+    SuperscriptBox["\[ExponentialE]", "x"], " ", 
+    SuperscriptBox["x", "2"], " ", "\[Epsilon]"}], "+", 
+   RowBox[{
+    FractionBox["1", "8"], " ", 
+    SuperscriptBox["\[ExponentialE]", "x"], " ", 
+    SuperscriptBox["x", "4"], " ", 
+    SuperscriptBox["\[Epsilon]", "2"]}], "+", 
+   RowBox[{
+    FractionBox["1", "48"], " ", 
+    SuperscriptBox["\[ExponentialE]", "x"], " ", 
+    SuperscriptBox["x", "6"], " ", 
+    SuperscriptBox["\[Epsilon]", "3"]}], "+", 
+   RowBox[{
+    FractionBox["1", "384"], " ", 
+    SuperscriptBox["\[ExponentialE]", "x"], " ", 
+    SuperscriptBox["x", "8"], " ", 
+    SuperscriptBox["\[Epsilon]", "4"]}], "+", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", "x"], " ", 
+     SuperscriptBox["x", "10"], " ", 
+     SuperscriptBox["\[Epsilon]", "5"]}], "3840"], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "\[Epsilon]", "]"}], "6"],
+    SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 6, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`\[Epsilon], 0, {
+   E^$CellContext`x, Rational[1, 2] E^$CellContext`x $CellContext`x^2, 
+    Rational[1, 8] E^$CellContext`x $CellContext`x^4, Rational[1, 48] 
+    E^$CellContext`x $CellContext`x^6, Rational[1, 384] 
+    E^$CellContext`x $CellContext`x^8, Rational[1, 3840] 
+    E^$CellContext`x $CellContext`x^10}, 0, 6, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.826898914562202*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"bba59afd-4af3-4365-a85c-7e9d5cf6af86"]
+}, Open  ]],
+
+Cell["\<\
+which matches what we found using the perturbation theory, so this again \
+validates our approximate solution we found in the first part. \
+\>", "Text",
+ CellChangeTimes->{{3.82689900772164*^9, 
+  3.826899037721875*^9}},ExpressionUUID->"da929fef-0e11-4ceb-8e2e-\
+53062b1db60c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   SuperscriptBox["\[ExponentialE]", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Epsilon]"}], "2"]], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Epsilon]", ",", "0", ",", "5"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.826899278375575*^9, 3.826899280409902*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"fd82f8b1-5313-4d42-b5e7-3f79d5e5ef28"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"1", "+", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["x", "2"], " ", "\[Epsilon]"}], "2"], "+", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["x", "4"], " ", 
+     SuperscriptBox["\[Epsilon]", "2"]}], "8"], "+", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["x", "6"], " ", 
+     SuperscriptBox["\[Epsilon]", "3"]}], "48"], "+", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["x", "8"], " ", 
+     SuperscriptBox["\[Epsilon]", "4"]}], "384"], "+", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["x", "10"], " ", 
+     SuperscriptBox["\[Epsilon]", "5"]}], "3840"], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "\[Epsilon]", "]"}], "6"],
+    SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 6, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`\[Epsilon], 0, {
+   1, Rational[1, 2] $CellContext`x^2, Rational[1, 8] $CellContext`x^4, 
+    Rational[1, 48] $CellContext`x^6, Rational[1, 384] $CellContext`x^8, 
+    Rational[1, 3840] $CellContext`x^10}, 0, 6, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.826899282293695*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"f64e68c1-667a-49b8-9d12-dbcb4a45ce37"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2449,11 +2634,21 @@ Cell[CellGroupData[{
 Cell[71641, 1819, 2484, 62, 81, "Input",ExpressionUUID->"9f2dbd70-ae6d-4dba-8735-b234c8c74232"],
 Cell[74128, 1883, 16842, 344, 236, "Output",ExpressionUUID->"4025659b-5772-4bc6-81a6-9c271ad67948"]
 }, Open  ]],
-Cell[90985, 2230, 680, 15, 53, "Text",ExpressionUUID->"be8cce3a-09de-4f39-a3c0-90571fbaa201"]
+Cell[90985, 2230, 2972, 75, 204, "Text",ExpressionUUID->"be8cce3a-09de-4f39-a3c0-90571fbaa201"],
+Cell[93960, 2307, 244, 6, 32, "Text",ExpressionUUID->"3bb61e4b-9e23-40e4-ba51-68750628ade4"],
+Cell[CellGroupData[{
+Cell[94229, 2317, 449, 11, 47, "Input",ExpressionUUID->"ffb264fb-d231-493d-8114-88c93f6045ee"],
+Cell[94681, 2330, 1633, 41, 54, "Output",ExpressionUUID->"bba59afd-4af3-4365-a85c-7e9d5cf6af86"]
+}, Open  ]],
+Cell[96329, 2374, 287, 6, 32, "Text",ExpressionUUID->"da929fef-0e11-4ceb-8e2e-53062b1db60c"],
+Cell[CellGroupData[{
+Cell[96641, 2384, 419, 10, 47, "Input",ExpressionUUID->"fd82f8b1-5313-4d42-b5e7-3f79d5e5ef28"],
+Cell[97063, 2396, 1200, 33, 54, "Output",ExpressionUUID->"f64e68c1-667a-49b8-9d12-dbcb4a45ce37"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[91702, 2250, 156, 3, 67, "Section",ExpressionUUID->"53360077-b126-4736-89d5-442e353af9f0"],
-Cell[91861, 2255, 3455, 83, 145, "Text",ExpressionUUID->"fd8fe25a-0bda-453f-93cc-c04259d41a4f"]
+Cell[98312, 2435, 156, 3, 67, "Section",ExpressionUUID->"53360077-b126-4736-89d5-442e353af9f0"],
+Cell[98471, 2440, 3455, 83, 145, "Text",ExpressionUUID->"fd8fe25a-0bda-453f-93cc-c04259d41a4f"]
 }, Open  ]]
 }, Open  ]]
 }
