@@ -1,0 +1,254 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9270,        246]
+NotebookOptionsPosition[      8033,        216]
+NotebookOutlinePosition[      8434,        232]
+CellTagsIndexPosition[      8391,        229]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Math 223: Homework 9", "Title",
+ CellChangeTimes->{{3.819477029542458*^9, 3.8194770325147047`*^9}, {
+   3.821234360928924*^9, 3.82123436135856*^9}, 3.823272087447147*^9, 
+   3.8232721328114*^9, 
+   3.8268432533054457`*^9},ExpressionUUID->"197654a4-4d8f-4ad2-acd2-\
+0426bba106a8"],
+
+Cell["Ali Heydari", "Author",
+ CellChangeTimes->{{3.819477041266364*^9, 3.81947704456911*^9}, {
+  3.821234363790626*^9, 
+  3.821234365260395*^9}},ExpressionUUID->"47fdc244-5ee2-4b42-93c3-\
+40f677fdf9ef"],
+
+Cell["April. 8th, 2021", "Affiliation",
+ CellChangeTimes->{{3.8194774638175488`*^9, 3.819477466618027*^9}, {
+  3.821234367895542*^9, 3.821234386336918*^9}, {3.823272100909387*^9, 
+  3.823272102377499*^9}, {3.8268432559786253`*^9, 
+  3.826843259826151*^9}},ExpressionUUID->"581392a7-3011-4211-898e-\
+5aefcdf8effb"],
+
+Cell[CellGroupData[{
+
+Cell["Problem 1", "Section",
+ CellChangeTimes->{{3.8194770755713477`*^9, 
+  3.8194770765366144`*^9}},ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-\
+4b7c9c73d5a2"],
+
+Cell[TextData[{
+ "Use second-order perturbation theory to find approximations to the roots of \
+",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         SuperscriptBox[
+          StyleBox["x", "TI"], "2"], "+", 
+         StyleBox["x", "TI"], "+", "6", "\[Epsilon]", "\[LongEqual]", "0"}], 
+       TraditionalForm], "errors" -> {}, "input" -> 
+     "x^2 + x + 6\\epsilon = 0", "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "669c7730-82e2-4df5-b2ff-d62145e999c7"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.823272161170442*^9, 3.8232721651934137`*^9}, {
+  3.823272397584096*^9, 3.823272557020988*^9}, {3.823272644521634*^9, 
+  3.8232726452007303`*^9}, {3.8268433844189157`*^9, 
+  3.826843430084824*^9}},ExpressionUUID->"d9d81440-dd2a-4915-ae1b-\
+9469cd2d3476"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 2", "Section",
+ CellChangeTimes->{{3.819477185401244*^9, 
+  3.8194771863519216`*^9}},ExpressionUUID->"3f070b75-5760-46e2-8dfd-\
+1b5d3e237d45"],
+
+Cell[TextData[{
+ "Compute all of the coefficients in the perturbation series solution to the \
+initial-value problem \n\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         SuperscriptBox[
+          StyleBox["y", "TI"], "\[Prime]"], "\[LongEqual]", 
+         StyleBox["y", "TI"], "+", "\[Epsilon]", 
+         StyleBox["x", "TI"], 
+         StyleBox["y", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "y' = y + \\epsilon xy", "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "b19ab091-b017-4d41-8a78-b8bdd29f8006"],
+ " \t\t\t",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    TemplateBox[Association["boxes" -> FormBox[
+        RowBox[{
+          StyleBox["y", "TI"], 
+          RowBox[{"(", "0", ")"}], "\[LongEqual]", "1"}], TraditionalForm], 
+      "errors" -> {}, "input" -> "y(0) = 1", "state" -> "Boxes"],
+     "TeXAssistantTemplate"], ","}], TraditionalForm]],ExpressionUUID->
+  "261e6b49-d171-47fa-aeb1-d207e7637b8c"],
+ "\n\nShow that the series converges for all values of ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association[
+    "boxes" -> FormBox["\[Epsilon]", TraditionalForm], "errors" -> {}, 
+     "input" -> "\\epsilon", "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "82c104e8-834a-4f45-90c5-7433af92b5ca"],
+ ". Also, compute the perturbation series indirectly by\nexpanding the \
+explicit exact solution in powers of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    TemplateBox[Association[
+     "boxes" -> FormBox["\[Epsilon]", TraditionalForm], "errors" -> {}, 
+      "input" -> "\\epsilon", "state" -> "Boxes"],
+     "TeXAssistantTemplate"], "."}], TraditionalForm]],ExpressionUUID->
+  "d3306a40-bbbe-4e83-bad2-541d448cc030"]
+}], "Text",
+ CellChangeTimes->{{3.8194771895995965`*^9, 3.8194771998661075`*^9}, {
+  3.821235115460826*^9, 3.821235161814089*^9}, {3.821235212212501*^9, 
+  3.8212352653571863`*^9}, {3.8212353035743437`*^9, 3.821235416260076*^9}, {
+  3.82327215719536*^9, 3.823272167210637*^9}, {3.826843463846857*^9, 
+  3.826843601320153*^9}},ExpressionUUID->"ac4970ba-4670-4dab-9885-\
+453ea799808e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 3", "Section",
+ CellChangeTimes->{{3.8194772128885565`*^9, 
+  3.819477213817498*^9}},ExpressionUUID->"53360077-b126-4736-89d5-\
+442e353af9f0"],
+
+Cell[TextData[{
+ "Show that the solution to the initial-value problem\n\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         SuperscriptBox[
+          StyleBox["y", "TI"], "\[Prime]"], "+", 
+         SuperscriptBox[
+          StyleBox["y", "TI"], "\[Prime]"], "+", "\[Epsilon]", 
+         StyleBox["y", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "y' +y' + \\epsilon y=0", "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "e03cea2d-5b41-4281-9466-88c797602c24"],
+ " \t\t\t",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    TemplateBox[Association["boxes" -> FormBox[
+        RowBox[{
+          SuperscriptBox[
+           StyleBox["y", "TI"], "\[Prime]"], 
+          RowBox[{"(", "0", ")"}], "\[LongEqual]", "0"}], TraditionalForm], 
+      "errors" -> {}, "input" -> "y'(0) = 0", "state" -> "Boxes"],
+     "TeXAssistantTemplate"], ","}], TraditionalForm]],ExpressionUUID->
+  "52fb1b11-461a-4a3a-9a7c-854474ea3658"],
+ "\n\nremains bounded for all real ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       StyleBox["x", "TI"], TraditionalForm], "errors" -> {}, "input" -> "x", 
+     "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "08d077a5-6d1a-4b8f-a247-220113a1a436"],
+ ". Obtain a first-order perturbative approximation to ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         StyleBox["y", "TI"], "(", 
+         StyleBox["x", "TI"], ")"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "y(x)", "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "bea64cb5-923c-45cf-9503-7e56284d5621"],
+ " and and show that it is unbounded as ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[Rule]", "\[Infinity]"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x \\rightarrow \\infty", "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "91098113-4804-4f79-baa0-611f3d0caa1c"],
+ ". Conclude that the first order approximation of is valid only for ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{"|", 
+         StyleBox["x", "TI"], "|", "<", 
+         StyleBox["O", "TI"], 
+         RowBox[{"(", 
+           SuperscriptBox["\[Epsilon]", "-1"], ")"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "|x| < \\mathcal{O}(\\epsilon^{-1})", "state" -> 
+     "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "ce84b5fc-ab85-424d-a9de-2778aee6b618"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.819477217465713*^9, 3.8194772281844006`*^9}, {
+  3.821235433148364*^9, 3.821235480244967*^9}, {3.823272178528523*^9, 
+  3.823272181306826*^9}, {3.826843619515315*^9, 3.826843630147752*^9}, {
+  3.826843678128724*^9, 
+  3.8268438101616096`*^9}},ExpressionUUID->"fd8fe25a-0bda-453f-93cc-\
+c04259d41a4f"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1385, 786},
+WindowMargins->{{0, Automatic}, {1, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"ReverseColor.nb",
+ExpressionUUID->"72a1fe80-2578-4c5b-9ad0-991fb4530832"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 285, 5, 98, "Title",ExpressionUUID->"197654a4-4d8f-4ad2-acd2-0426bba106a8"],
+Cell[868, 29, 203, 4, 31, "Author",ExpressionUUID->"47fdc244-5ee2-4b42-93c3-40f677fdf9ef"],
+Cell[1074, 35, 313, 5, 31, "Affiliation",ExpressionUUID->"581392a7-3011-4211-898e-5aefcdf8effb"],
+Cell[CellGroupData[{
+Cell[1412, 44, 158, 3, 67, "Section",ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-4b7c9c73d5a2"],
+Cell[1573, 49, 840, 20, 35, "Text",ExpressionUUID->"d9d81440-dd2a-4915-ae1b-9469cd2d3476"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2450, 74, 156, 3, 67, "Section",ExpressionUUID->"3f070b75-5760-46e2-8dfd-1b5d3e237d45"],
+Cell[2609, 79, 2163, 50, 138, "Text",ExpressionUUID->"ac4970ba-4670-4dab-9885-453ea799808e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4809, 134, 156, 3, 67, "Section",ExpressionUUID->"53360077-b126-4736-89d5-442e353af9f0"],
+Cell[4968, 139, 3037, 73, 145, "Text",ExpressionUUID->"fd8fe25a-0bda-453f-93cc-c04259d41a4f"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
