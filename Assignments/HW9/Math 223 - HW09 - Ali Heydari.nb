@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    262583,       5601]
-NotebookOptionsPosition[    253599,       5449]
-NotebookOutlinePosition[    254000,       5465]
-CellTagsIndexPosition[    253957,       5462]
+NotebookDataLength[    263917,       5634]
+NotebookOptionsPosition[    254737,       5476]
+NotebookOutlinePosition[    255334,       5498]
+CellTagsIndexPosition[    255291,       5495]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5370,6 +5370,31 @@ show that our first-order solution is valid for when ",
                  StyleBox["x", "TI"]}], ")"}]}], ")"}], "+", 
          StyleBox["O", "TI"], 
          RowBox[{"(", 
+           SuperscriptBox["\[Epsilon]", "2"], ")"}], "|", "\[LessEqual]", "|",
+          "cos", 
+         RowBox[{"(", 
+           StyleBox["x", "TI"], ")"}], "|", "+", "|", 
+         StyleBox["f", "TI"], 
+         StyleBox["r", "TI"], 
+         StyleBox["a", "TI"], 
+         StyleBox["c", "TI"], "\[Epsilon]", "4", 
+         RowBox[{"(", 
+           RowBox[{"6|", "cos", 
+             RowBox[{"(", 
+               StyleBox["x", "TI"], ")"}], "|", "-", "2|", "cos", 
+             SuperscriptBox[
+              RowBox[{"(", 
+                StyleBox["x", "TI"], ")"}], "3"], "|", "-", "2|", 
+             StyleBox["x", "TI"], "||", "sin", 
+             RowBox[{"(", 
+               StyleBox["x", "TI"], ")"}], "|", "-", "|", "sin", 
+             RowBox[{"(", 
+               StyleBox["x", "TI"], ")"}], "||", "sin", 
+             RowBox[{"(", 
+               RowBox[{"2", 
+                 StyleBox["x", "TI"]}], ")"}], "|"}], ")"}], "+", 
+         StyleBox["O", "TI"], 
+         RowBox[{"(", 
            SuperscriptBox["\[Epsilon]", "2"], ")"}], "|", "\[LessEqual]", 
          "|1|", "+", 
          FractionBox["\[Epsilon]", "4"], 
@@ -5381,7 +5406,9 @@ show that our first-order solution is valid for when ",
            SuperscriptBox["\[Epsilon]", "2"], ")"}]}], TraditionalForm], 
      "errors" -> {}, "input" -> 
      "|y| = |\\cos (x) +\\frac{\\epsilon}{4}(6\\cos(x) - 2\\cos(x)^3 - 2x \
-\\sin(x) - \\sin(x)\\sin(2x))+ \\mathcal{O}(\\epsilon^2)| \\leq |1 \
+\\sin(x) - \\sin(x)\\sin(2x))+ \\mathcal{O}(\\epsilon^2)| \\leq |\\cos (x) |+ \
+|frac{\\epsilon}{4}(6|\\cos(x)| - 2|\\cos(x)^3| - 2|x| |\\sin(x)| - \
+|\\sin(x)||\\sin(2x)|)+ \\mathcal{O}(\\epsilon^2)| \\leq  |1 \
 |+\\frac{\\epsilon}{4}(6- 2- 2|x|  - 1) + \\mathcal{O}(\\epsilon^2)", "state" -> 
      "Boxes"],
     "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
@@ -5449,6 +5476,12 @@ bounded which means that ",
 },
 WindowSize->{1430, 786},
 WindowMargins->{{3, Automatic}, {Automatic, 1}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+PrintingOptions->{"PrintCellBrackets"->False,
+"PrintMultipleHorizontalPages"->False,
+"PrintRegistrationMarks"->False,
+"PrintingMargins"->36},
 FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
 StyleDefinitions->"ReverseColor.nb",
 ExpressionUUID->"72a1fe80-2578-4c5b-9ad0-991fb4530832"
@@ -5600,7 +5633,7 @@ Cell[CellGroupData[{
 Cell[194922, 4372, 1882, 50, 93, "Input",ExpressionUUID->"800875f5-5ffe-4da2-a700-d60f46c16beb"],
 Cell[196807, 4424, 51127, 888, 315, "Output",ExpressionUUID->"3e25214e-43e8-4847-be6d-0cc53fb84fef"]
 }, Open  ]],
-Cell[247949, 5315, 5622, 130, 271, "Text",ExpressionUUID->"b7778fc0-73c3-4fd7-883e-7fc5b57d663c"]
+Cell[247949, 5315, 6760, 157, 309, "Text",ExpressionUUID->"b7778fc0-73c3-4fd7-883e-7fc5b57d663c"]
 }, Open  ]]
 }, Open  ]]
 }
