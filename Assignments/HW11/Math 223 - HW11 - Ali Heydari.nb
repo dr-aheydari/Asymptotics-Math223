@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      3542,        101]
-NotebookOptionsPosition[      2532,         75]
-NotebookOutlinePosition[      2933,         91]
-CellTagsIndexPosition[      2890,         88]
+NotebookDataLength[      6359,        170]
+NotebookOptionsPosition[      5251,        143]
+NotebookOutlinePosition[      5653,        159]
+CellTagsIndexPosition[      5610,        156]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -48,12 +48,47 @@ Cell["Problem 1", "Section",
   3.8194770765366144`*^9}},ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-\
 4b7c9c73d5a2"],
 
-Cell["Text!", "Text",
+Cell[TextData[{
+ "Determine the averaged equations for the van der Pol oscillator,\n\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         SuperscriptBox[
+          StyleBox["y", "TI"], "\[Prime]\[Prime]"], "+", "\[Epsilon]", 
+         RowBox[{"(", 
+           RowBox[{
+             SuperscriptBox[
+              StyleBox["y", "TI"], "2"], "-", "1"}], ")"}], 
+         SuperscriptBox[
+          StyleBox["y", "TI"], "\[Prime]"], "+", 
+         StyleBox["y", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "y'' + \\epsilon(y^2-1) y'+ y = 0", "state" -> 
+     "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"843f9094-8329-4d13-8e30-93cde69910cd"],
+ "\n\nUse the averaged equations to show that it has a stable limit cycle \
+that is nearly circular with radius ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         StyleBox["r", "TI"], "\[LongEqual]", "2", "+", 
+         StyleBox["O", "TI"], 
+         RowBox[{"(", "\[Epsilon]", ")"}]}], TraditionalForm], "errors" -> {},
+      "input" -> "r = 2 + \\mathcal{O}(\\epsilon)", "state" -> "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "516c42f1-17cf-45c0-8cb9-efbf99ecfcd5"],
+ "."
+}], "Text",
  CellChangeTimes->{{3.823272161170442*^9, 3.8232721651934137`*^9}, {
   3.823272397584096*^9, 3.823272557020988*^9}, {3.823272644521634*^9, 
-  3.8232726452007303`*^9}, {3.828040326699123*^9, 
-  3.8280403297838917`*^9}},ExpressionUUID->"d9d81440-dd2a-4915-ae1b-\
-9469cd2d3476"]
+  3.8232726452007303`*^9}, {3.828040326699123*^9, 3.8280403297838917`*^9}, {
+  3.8294881232843857`*^9, 3.829488138473312*^9}, {3.829488171439698*^9, 
+  3.829488211700395*^9}},ExpressionUUID->"d9d81440-dd2a-4915-ae1b-\
+9469cd2d3476"],
+
+Cell["", "Text",ExpressionUUID->"ea69bc13-76c4-4455-8f9c-24ea21c9869d"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -63,17 +98,50 @@ Cell["Problem 2", "Section",
   3.8194771863519216`*^9}},ExpressionUUID->"3f070b75-5760-46e2-8dfd-\
 1b5d3e237d45"],
 
-Cell["Text!!", "Text",
+Cell[TextData[{
+ "Find and solve the averaged equations for\n\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          RowBox[{
+            StyleBox["d", "TI"], 
+            SuperscriptBox[
+             StyleBox["y", "TI"], "2"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            SuperscriptBox[
+             StyleBox["t", "TI"], "2"]}]], "+", 
+         StyleBox["y", "TI"], "+", "\[Epsilon]", 
+         RowBox[{"(", 
+           SuperscriptBox[
+            StyleBox["y", "TI"], "2"], ")"}], 
+         FractionBox[
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["t", "TI"]}]], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\frac{dy^2}{dt^2} + y + \\epsilon(y^2)\\frac{dy}{dt} = 0", "state" -> 
+     "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"c361e490-aa28-4d58-a113-dc6adcd572b1"],
+ "\n\nDescribe the long-term behavior of the solution based on your results."
+}], "Text",
  CellChangeTimes->{{3.8194771895995965`*^9, 3.8194771998661075`*^9}, {
   3.821235115460826*^9, 3.821235161814089*^9}, {3.821235212212501*^9, 
   3.8212352653571863`*^9}, {3.8212353035743437`*^9, 3.821235416260076*^9}, {
-  3.82327215719536*^9, 
-  3.823272167210637*^9}},ExpressionUUID->"ac4970ba-4670-4dab-9885-\
+  3.82327215719536*^9, 3.823272167210637*^9}, {3.829488218603135*^9, 
+  3.829488229254422*^9}, {3.8294887693010406`*^9, 
+  3.8294887918059473`*^9}},ExpressionUUID->"ac4970ba-4670-4dab-9885-\
 453ea799808e"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1306, 786},
+WindowSize->{Full, Full},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
 StyleDefinitions->"ReverseColor.nb",
@@ -96,11 +164,12 @@ Cell[915, 29, 203, 4, 31, "Author",ExpressionUUID->"47fdc244-5ee2-4b42-93c3-40f6
 Cell[1121, 35, 356, 6, 31, "Affiliation",ExpressionUUID->"581392a7-3011-4211-898e-5aefcdf8effb"],
 Cell[CellGroupData[{
 Cell[1502, 45, 158, 3, 67, "Section",ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-4b7c9c73d5a2"],
-Cell[1663, 50, 297, 5, 32, "Text",ExpressionUUID->"d9d81440-dd2a-4915-ae1b-9469cd2d3476"]
+Cell[1663, 50, 1710, 38, 123, "Text",ExpressionUUID->"d9d81440-dd2a-4915-ae1b-9469cd2d3476"],
+Cell[3376, 90, 71, 0, 32, "Text",ExpressionUUID->"ea69bc13-76c4-4455-8f9c-24ea21c9869d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1997, 60, 156, 3, 67, "Section",ExpressionUUID->"3f070b75-5760-46e2-8dfd-1b5d3e237d45"],
-Cell[2156, 65, 348, 6, 32, "Text",ExpressionUUID->"ac4970ba-4670-4dab-9885-453ea799808e"]
+Cell[3484, 95, 156, 3, 67, "Section",ExpressionUUID->"3f070b75-5760-46e2-8dfd-1b5d3e237d45"],
+Cell[3643, 100, 1580, 39, 157, "Text",ExpressionUUID->"ac4970ba-4670-4dab-9885-453ea799808e"]
 }, Open  ]]
 }, Open  ]]
 }
